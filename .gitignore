@@ -1556,3 +1556,16 @@ node_modules/yaml/dist/stringify/stringifyPair.d.ts
 node_modules/yaml/dist/stringify/stringifyPair.js
 node_modules/yaml/dist/stringify/stringifyString.d.ts
 node_modules/yaml/dist/stringify/stringifyString.js
+node_modules/tailwind-scrollbar/LICENSE
+node_modules/tailwind-scrollbar/package.json
+node_modules/tailwind-scrollbar/README.md
+node_modules/tailwind-scrollbar/src/helpers.d.ts
+node_modules/tailwind-scrollbar/src/helpers.js
+node_modules/tailwind-scrollbar/src/index.d.ts
+node_modules/tailwind-scrollbar/src/index.js
+node_modules/tailwind-scrollbar/src/typedefs.d.ts
+node_modules/tailwind-scrollbar/src/typedefs.js
+node_modules/tailwind-scrollbar/src/utilities.d.ts
+node_modules/tailwind-scrollbar/src/utilities.js
+node_modules/tailwind-scrollbar/src/variants.d.ts
+node_modules/tailwind-scrollbar/src/variants.js
