@@ -12,19 +12,15 @@
     }
 
     .todo {
-        @apply flex item-center justify-center gap-3 py-2 px-4 rounded-md bg-orange-100;
+        @apply flex items-center justify-center gap-3 py-2 px-4 rounded-md bg-orange-200;
     }
 
     .todo-item {
-        list-style: none;
-        font-size: 18px;
-        width: 100%;
-        @apply text-slate-700;
+        @apply list-none text-lg w-full text-slate-700;
     }
 
     .checked-btn,
     .trash-btn {
-        font-size: 24px;
-        @apply text-slate-700;
+        @apply text-2xl text-slate-700;
     }
 }

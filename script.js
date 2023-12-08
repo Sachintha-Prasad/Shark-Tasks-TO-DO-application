@@ -5,6 +5,7 @@ const todoList = document.querySelector(".todo-list-container");
 
 // EVENT LISTNERS ==============================================================
 addBtn.addEventListener("click", createTask);
+todoList.addEventListener("click", checkDelete);
 userInput.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
         createTask();
@@ -18,7 +19,7 @@ function createTask(event) {
 
     if (userInput.value === "") {
         alert(
-            "🚫 Whoops! Looks like you forgot to write the task! Try again. 📝✨"
+            "🚫 Whoops! Looks like you're trying to add a task without typing anything. 🤔 Please enter a task before adding it! 📝✨"
         );
     } else {
         // div for todo
@@ -50,5 +51,10 @@ function createTask(event) {
         todoList.appendChild(todoDiv);
     }
 
+    // clear input value
     userInput.value = "";
+}
+
+function checkDelete(event) {
+    console.log(event.target);
 }

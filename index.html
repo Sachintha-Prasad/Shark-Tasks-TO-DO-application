@@ -22,10 +22,10 @@
     <title>Shark Task TO-DO application</title>
 </head>
 
-<body class="min-h-screen bg-gradient-to-b from-indigo-500 to-pink-500 font-poppins">
+<body class="min-h-screen bg-gradient-to-t from-indigo-500 to-pink-500 font-poppins bg-cover bg-no-repeat">
 
     <div
-        class="todo-box container-width mx-auto my-24 p-8 rounded-lg bg-white flex flex-col gap-8 items-center justify-center shadow-2xl">
+        class="todo-box container-width mx-auto my-12 p-8 rounded-lg bg-white flex flex-col gap-8 items-center justify-center shadow-2xl lg:absolute lg:top-[10%] lg:left-1/2 lg:-translate-x-1/2">
         <h1 class="text-3xl font-bold text-slate-600 flex items-center">Shark Tasks
             <i class="fa-brands fa-servicestack text-3xl text-slate-600 ml-3"></i>
         </h1>
@@ -37,8 +37,7 @@
                 class="bg-orange-500 px-12 py-3 rounded-3xl outline-none font-semibold text-white hover:bg-orange-400">Add</button>
         </form>
 
-        <div class="todo-list-container flex flex-col gap-3 w-full">
-
+        <div class="todo-list-container flex flex-col gap-3 w-full overflow-y-scroll lg:max-h-[400px] px-3">
         </div>
     </div>
 
