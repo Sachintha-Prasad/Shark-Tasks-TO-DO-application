@@ -1,7 +1,5 @@
 # Shark Tasks TO-DO Application
 
-# Todo Application
-
 ## Overview
 
 This shark tasks TO-DO application is designed to help users manage their tasks effectively. It allows users to add, delete, and mark tasks as complete, providing an organized way to stay on top of their to-do list.
