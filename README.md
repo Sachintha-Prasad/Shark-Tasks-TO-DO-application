@@ -2,6 +2,8 @@
 
 ![sapmle screenshot](https://github.com/Sachintha-Prasad/Shark-Tasks-TO-DO-application/assets/95670889/7aa443b7-8f23-4ceb-bff5-eb0b598ba30b)
 
+### Visit live site - https://shark-tasks.netlify.app/
+
 ## Overview
 
 This shark tasks TO-DO application is designed to help users manage their tasks effectively. It allows users to add, delete, and mark tasks as complete, providing an organized way to stay on top of their to-do list.
