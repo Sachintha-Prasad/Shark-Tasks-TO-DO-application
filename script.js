@@ -5,12 +5,13 @@ const todoList = document.querySelector(".todo-list-container");
 
 // EVENT LISTNERS ==============================================================
 addBtn.addEventListener("click", createTask);
-todoList.addEventListener("click", checkDelete);
-userInput.addEventListener("keypress", (event) => {
+addBtn.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
         createTask();
     }
 });
+
+todoList.addEventListener("click", checkDelete);
 
 // FUNCTIONS ====================================================================
 function createTask(event) {
@@ -28,7 +29,7 @@ function createTask(event) {
 
         // create check button
         const checkedBtn = document.createElement("button");
-        checkedBtn.innerHTML = `<i class="fa-regular fa-circle"></i>`;
+        checkedBtn.innerHTML = `<i class="fa-solid fa-circle-check"></i>`;
         checkedBtn.classList.add("checked-btn");
         todoDiv.appendChild(checkedBtn);
 
@@ -56,5 +57,21 @@ function createTask(event) {
 }
 
 function checkDelete(event) {
-    console.log(event.target);
+    const item = event.target;
+
+    // delete a task
+    if (item.classList[0] === "trash-btn") {
+        const todo = item.parentElement;
+        todo.classList.add("swipe");
+        todo.addEventListener("transitionend", () => {
+            todo.remove();
+        });
+    }
+
+    // check a task
+    if (item.classList[0] === "checked-btn") {
+        const todo = item.parentElement;
+        todo.classList.toggle("checked");
+        item.classList.toggle("complete");
+    }
 }

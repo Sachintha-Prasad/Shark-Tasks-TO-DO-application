@@ -12,7 +12,7 @@
     }
 
     .todo {
-        @apply flex items-center justify-center gap-3 py-2 px-4 rounded-md bg-orange-200;
+        @apply flex items-center justify-center gap-3 py-2 px-4 rounded-md bg-indigo-100 transition-all duration-[400ms] ease-linear;
     }
 
     .todo-item {
@@ -22,5 +22,24 @@
     .checked-btn,
     .trash-btn {
         @apply text-2xl text-slate-700;
+    }
+
+    .fa-trash,
+    .fa-circle-check {
+        @apply pointer-events-none;
+    }
+
+    .checked {
+        @apply line-through;
+        text-decoration-thickness: 3px;
+    }
+
+    .complete {
+        @apply text-green-600;
+    }
+
+    .swipe {
+        transform: translateX(100%);
+        opacity: 0;
     }
 }
